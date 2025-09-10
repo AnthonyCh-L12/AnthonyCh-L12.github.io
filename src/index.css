@@ -37,6 +37,8 @@ All colors are HSL values for the specified color palette.
     --input: 220 13% 91%;
     --ring: 221 83% 32%;
 
+    --white: 0 0% 100%;
+
     --radius: 0.75rem;
 
     /* Custom design tokens for portfolio */

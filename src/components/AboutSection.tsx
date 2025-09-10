@@ -89,7 +89,7 @@ const AboutSection = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader className="pb-3">
-                  <div className="text-3xl md:text-4xl font-poppins font-bold hero-gradient bg-clip-text text-transparent">
+                  <div className="text-3xl md:text-4xl font-poppins font-bold hero-gradient bg-clip-text text-white">
                     {stat.number}
                   </div>
                   <CardTitle className="text-sm font-roboto font-semibold text-secondary">

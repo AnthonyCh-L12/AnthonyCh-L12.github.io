@@ -22,19 +22,19 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "anthony.chavez@email.com",
-      href: "mailto:anthony.chavez@email.com"
+      value: "anthonymanuelchavezlujan@gmail.com",
+      href: "mailto:anthonymanuelchavezlujan@gmail.com"
     },
     {
       icon: Phone,
       title: "WhatsApp",
-      value: "+51 999 999 999",
-      href: "https://wa.me/+51999999999"
+      value: "+51 970 862 081",
+      href: "https://wa.me/+51970862081"
     },
     {
       icon: MapPin,
       title: "Ubicación",
-      value: "Lima, Perú",
+      value: "Chimbote, Perú",
       href: "#"
     },
     {
@@ -128,7 +128,7 @@ const ContactSection = () => {
                   ¿Necesitas una respuesta inmediata? Escríbeme por WhatsApp.
                 </p>
                 <a 
-                  href="https://wa.me/+51999999999?text=Hola%20Anthony,%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios"
+                  href="https://wa.me/+51970862081?text=Hola%20Anthony,%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-300"

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
-import anthonyProfile from "@/assets/anthony-profile.jpg";
+import anthonyProfile from "@/assets/anthony-profile.jpeg";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-primary leading-tight">
                 Anthony
-                <span className="block tech-gradient bg-clip-text text-transparent">
+                <span className="block tech-gradient bg-clip-text text-white">
                   Chávez Lujan
                 </span>
               </h1>

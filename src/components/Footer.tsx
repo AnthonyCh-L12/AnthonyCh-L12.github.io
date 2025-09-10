@@ -22,17 +22,17 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      href: "https://linkedin.com/in/anthony-chavez-lujan",
+      href: "https://www.linkedin.com/in/anthony-chávez-lujan-36b84a314/",
       icon: Linkedin
     },
     {
       name: "GitHub", 
-      href: "https://github.com/anthony-chavez",
+      href: "https://github.com/AnthonyCh-L12/",
       icon: Github
     },
     {
       name: "Facebook",
-      href: "https://facebook.com/anthony.chavez.dev",
+      href: "https://www.facebook.com/anthomymanuel.chavezlujan",
       icon: Facebook
     }
   ];
@@ -55,7 +55,7 @@ const Footer = () => {
                 <Code2 className="h-5 w-5 text-white" />
               </div>
               <span className="font-poppins font-semibold text-lg">
-                Anthony Chávez
+                Anthony Chávez Lujan
               </span>
             </div>
             <p className="text-white/80 leading-relaxed">
@@ -114,26 +114,26 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-secondary" />
                 <a 
-                  href="mailto:anthony.chavez@email.com"
+                  href="mailto:anthonymanuelchavezlujan@gmail.com"
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  anthony.chavez@email.com
+                  anthonymanuelchavezlujan@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-secondary" />
                 <a 
-                  href="https://wa.me/+51999999999"
+                  href="https://wa.me/+51970862081"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/80 hover:text-white transition-colors"
                 >
-                  +51 999 999 999
+                  +51 970 862 081
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-secondary" />
-                <span className="text-white/80">Lima, Perú</span>
+                <span className="text-white/80">Chimbote, Perú</span>
               </div>
             </div>
           </div>
