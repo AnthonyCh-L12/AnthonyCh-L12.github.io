@@ -20,10 +20,7 @@ const Index = () => {
         <AboutSection />
         
         {/* Sección 3: Services - Fondo oscuro (patrón impar) */}
-        <div className="bg-gradient-to-br from-gray-900 via-slate-900 to-gray-800 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/5 via-transparent to-teal-600/5"></div>
-          <PortfolioSection />
-        </div>
+        <PortfolioSection />
         
         {/* Sección 4: Portfolio - Fondo oscuro alternativo (patrón par) */}
         <div className="bg-gradient-to-br from-slate-800 via-gray-800 to-slate-900 relative">
