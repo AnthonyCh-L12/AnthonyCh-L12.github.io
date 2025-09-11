@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# 👨‍💻 Mi Página Personal – Anthony Chávez
 
-## Project info
+Este proyecto corresponde a mi **página personal**, un espacio donde presento información sobre mí, mis proyectos y formas de contacto.  
+El objetivo de esta web es mostrar mi perfil profesional, mis habilidades y mi portafolio de trabajos realizados.
 
-**URL**: https://lovable.dev/projects/411ab616-0a49-4467-b4b6-d7e3d284ea8a
+🌐 **URL del proyecto**: [https://anthony-chavez.netlify.app/](https://anthony-chavez.netlify.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 Características principales
 
-**Use Lovable**
+- ✅ Presentación personal con información sobre mí.  
+- ✅ Sección de proyectos con ejemplos de trabajos realizados.  
+- ✅ Portafolio en línea accesible desde cualquier dispositivo.  
+- ✅ Diseño moderno, minimalista y responsivo.  
+- ✅ Integración con redes sociales y formulario de contacto.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/411ab616-0a49-4467-b4b6-d7e3d284ea8a) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tecnologías utilizadas
 
-**Use your preferred IDE**
+Este proyecto está desarrollado con:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ⚡ **Vite**  
+- ⚛️ **React**  
+- 🟦 **TypeScript**  
+- 🎨 **shadcn-ui**  
+- 🎯 **Tailwind CSS**  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🚀 Cómo ejecutar el proyecto en local
+
+Sigue estos pasos para correr el proyecto en tu máquina local:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# 1. Clona este repositorio
+git clone <URL_DEL_REPOSITORIO>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Ingresa al directorio del proyecto
+cd anthony-chavez
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 3. Instala las dependencias necesarias
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 4. Inicia el servidor de desarrollo
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/411ab616-0a49-4467-b4b6-d7e3d284ea8a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
