@@ -42,8 +42,16 @@ All colors are HSL values for the specified color palette.
     --radius: 0.75rem;
 
     /* Custom design tokens for portfolio */
-    --hero-gradient: linear-gradient(135deg, hsl(221, 83%, 32%), hsl(213, 94%, 68%));
-    --tech-gradient: linear-gradient(90deg, hsl(213, 94%, 68%), hsl(221, 83%, 32%));
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(221, 83%, 32%),
+      hsl(213, 94%, 68%)
+    );
+    --tech-gradient: linear-gradient(
+      90deg,
+      hsl(213, 94%, 68%),
+      hsl(221, 83%, 32%)
+    );
     --section-bg: 220 14% 98%;
     --shadow-soft: 0 4px 20px -2px hsl(221, 83%, 32%, 0.1);
     --shadow-card: 0 8px 30px -4px hsl(221, 83%, 32%, 0.15);
@@ -78,8 +86,16 @@ All colors are HSL values for the specified color palette.
     --input: 220 15% 20%;
     --ring: 213 94% 68%;
 
-    --hero-gradient: linear-gradient(135deg, hsl(213, 94%, 68%), hsl(221, 83%, 32%));
-    --tech-gradient: linear-gradient(90deg, hsl(221, 83%, 32%), hsl(213, 94%, 68%));
+    --hero-gradient: linear-gradient(
+      135deg,
+      hsl(213, 94%, 68%),
+      hsl(221, 83%, 32%)
+    );
+    --tech-gradient: linear-gradient(
+      90deg,
+      hsl(221, 83%, 32%),
+      hsl(213, 94%, 68%)
+    );
     --section-bg: 220 15% 12%;
   }
 }
@@ -93,7 +109,12 @@ All colors are HSL values for the specified color palette.
     @apply bg-background text-foreground font-roboto;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-poppins;
   }
 }
@@ -117,5 +138,112 @@ All colors are HSL values for the specified color palette.
 
   .shadow-card {
     box-shadow: var(--shadow-card);
+  }
+
+  /* Scroll Animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll.animate-visible {
+    opacity: 1;
+  }
+
+  /* Fade In Animation */
+  .animate-fade-in-up {
+    transform: translateY(50px);
+  }
+
+  .animate-fade-in-up.animate-visible {
+    transform: translateY(0);
+  }
+
+  /* Fade In From Left */
+  .animate-fade-in-left {
+    transform: translateX(-50px);
+  }
+
+  .animate-fade-in-left.animate-visible {
+    transform: translateX(0);
+  }
+
+  /* Fade In From Right */
+  .animate-fade-in-right {
+    transform: translateX(50px);
+  }
+
+  .animate-fade-in-right.animate-visible {
+    transform: translateX(0);
+  }
+
+  /* Scale Animation */
+  .animate-scale-in {
+    transform: scale(0.9);
+  }
+
+  .animate-scale-in.animate-visible {
+    transform: scale(1);
+  }
+
+  /* Slide In From Bottom */
+  .animate-slide-up {
+    transform: translateY(100px);
+  }
+
+  .animate-slide-up.animate-visible {
+    transform: translateY(0);
+  }
+
+  /* Stagger Animation for Cards */
+  .animate-stagger-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-stagger-item.animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Custom Keyframes */
+  @keyframes bounce-in {
+    0% {
+      opacity: 0;
+      transform: scale(0.3) translateY(100px);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05) translateY(-20px);
+    }
+    70% {
+      transform: scale(0.95) translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  .animate-bounce-in {
+    animation: bounce-in 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  @keyframes slide-in-blur {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .animate-slide-in-blur {
+    animation: slide-in-blur 0.8s ease-out;
   }
 }
