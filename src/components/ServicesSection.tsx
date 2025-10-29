@@ -113,11 +113,11 @@ const ServicesSection = () => {
               <AnimatedSection
                 key={index}
                 animation="fade-in-left"
-                delay={1000 + index * 150}
-                className="flex items-center justify-center space-x-3 p-6 rounded-lg bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 shadow-lg hover:shadow-emerald-500/20 hover:bg-gray-700/40 transition-all duration-300 group"
+                delay={10 + index * 15}
+                className="flex items-center justify-center space-x-3 p-6 rounded-lg bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 shadow-lg hover:shadow-xl hover:shadow-emerald-500/30 hover:bg-gray-700/50 hover:border-emerald-500/40 hover:scale-105 transition-all duration-200 ease-out group cursor-pointer"
               >
-                <feature.icon className="h-6 w-6 text-emerald-400 group-hover:text-emerald-300 transition-colors" />
-                <span className="font-roboto font-medium text-white group-hover:text-emerald-100 transition-colors">
+                <feature.icon className="h-6 w-6 text-emerald-400 group-hover:text-emerald-300 group-hover:scale-110 transition-all duration-200 ease-out" />
+                <span className="font-roboto font-medium text-white group-hover:text-emerald-100 transition-colors duration-200 ease-out">
                   {feature.text}
                 </span>
               </AnimatedSection>

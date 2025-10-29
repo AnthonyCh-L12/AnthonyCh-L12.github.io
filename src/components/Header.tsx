@@ -21,6 +21,15 @@ const Header = () => {
     }
   };
 
+  const openWhatsApp = () => {
+    const phoneNumber = "51970862081"; // Número sin espacios ni símbolos
+    const message =
+      "Hola Anthony! Quiero contactarme contigo para que me ayudes en un proyecto. ¿Podrías ayudarme?";
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/95 backdrop-blur-md border-b border-gray-700/50 shadow-2xl">
       <nav className="container mx-auto px-4 lg:px-6 h-16 flex items-center justify-between">
@@ -30,7 +39,7 @@ const Header = () => {
             <Code2 className="h-5 w-5 text-white" />
           </div>
           <span className="font-poppins font-semibold text-lg text-white">
-            Anthony Chávez Lujan
+            Anthony Manuel Chávez Lujan
           </span>
         </div>
 
@@ -50,10 +59,10 @@ const Header = () => {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <Button 
+          <Button
             variant="default"
             size="sm"
-            onClick={() => scrollToSection("#contacto")}
+            onClick={openWhatsApp}
             className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 border-0"
           >
             Hablemos 🚀
@@ -87,10 +96,10 @@ const Header = () => {
                 {item.name}
               </button>
             ))}
-            <Button 
+            <Button
               variant="default"
               size="sm"
-              onClick={() => scrollToSection("#contacto")}
+              onClick={openWhatsApp}
               className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium mt-4 hover:from-blue-600 hover:to-purple-700 hover:shadow-lg border-0"
             >
               Hablemos 🚀

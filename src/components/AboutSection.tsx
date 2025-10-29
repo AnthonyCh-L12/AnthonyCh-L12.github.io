@@ -11,7 +11,7 @@ const AboutSection = () => {
     },
     { number: "2+", label: "Años", description: "Experiencia en desarrollo" },
     {
-      number: "3+",
+      number: "5+",
       label: "Proyectos",
       description: "Completados exitosamente",
     },
@@ -69,7 +69,7 @@ const AboutSection = () => {
                 <p className="text-lg text-gray-300 leading-relaxed">
                   Soy{" "}
                   <span className="text-blue-400 font-semibold">
-                    Anthony Chávez Lujan
+                    Anthony Manuel Chávez Lujan
                   </span>
                   , un ingeniero de sistemas de 23 años apasionado por
                   transformar ideas complejas en soluciones tecnológicas simples

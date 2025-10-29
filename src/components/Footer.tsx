@@ -6,9 +6,8 @@ const Footer = () => {
   const quickLinks = [
     { name: "Inicio", href: "#inicio" },
     { name: "Sobre mí", href: "#sobre-mi" },
-    { name: "Servicios", href: "#servicios" },
     { name: "Portafolio", href: "#portafolio" },
-    { name: "Testimonios", href: "#testimonios" },
+    { name: "Servicios", href: "#servicios" },
     { name: "Contacto", href: "#contacto" }
   ];
 
@@ -22,7 +21,7 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/anthony-chávez-lujan-36b84a314/",
+      href: "https://www.linkedin.com/in/anthony-manuel-ch%C3%A1vez-lujan-36b84a314/",
       icon: Linkedin
     },
     {
@@ -142,7 +141,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-white/80 text-sm">
-            © {currentYear} Anthony Chávez Lujan. Todos los derechos reservados.
+            © {currentYear} Anthony Manuel Chávez Lujan. Todos los derechos reservados.
           </p>
           <div className="flex items-center space-x-6 text-sm text-white/80">
             <button 

@@ -36,7 +36,7 @@ const ContactSection = () => {
       icon: Phone,
       title: "WhatsApp",
       value: "+51 970 862 081",
-      href: "https://wa.me/+51970862081",
+      href: "https://wa.me/51970862081",
     },
     {
       icon: MapPin,
@@ -55,13 +55,42 @@ const ContactSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    console.log("Form data:", formData);
+    // Mapeo de tipos de proyecto para el mensaje
+    const projectTypeMap: { [key: string]: string } = {
+      web: "Desarrollo Web",
+      system: "Sistema Empresarial",
+      automation: "Automatización",
+      consulting: "Consultoría",
+      other: "Otro",
+    };
 
+    // Construir el mensaje para WhatsApp
+    const whatsappMessage =
+      `*SOLICITUD DE COTIZACIÓN*%0A%0A` +
+      `*Nombre:* ${formData.name}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `${formData.company ? `*Empresa:* ${formData.company}%0A` : ""}` +
+      `*Tipo de Proyecto:* ${
+        projectTypeMap[formData.projectType] || formData.projectType
+      }%0A%0A` +
+      `*Descripción del Proyecto:*%0A${formData.message}`;
+
+    // Número de WhatsApp (sin espacios ni símbolos)
+    const phoneNumber = "51970862081";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
+
+    // Abrir WhatsApp
+    window.open(whatsappUrl, "_blank");
+
+    // Mostrar mensaje de confirmación
     toast({
-      title: "¡Mensaje enviado!",
-      description: "Te contactaré pronto para discutir tu proyecto.",
+      title: "✅ Solicitud enviada correctamente",
+      description:
+        "Tu cotización será respondida en menos de 24 horas. ¡Gracias por contactarme!",
+      duration: 5000,
     });
 
+    // Limpiar formulario
     setFormData({
       name: "",
       email: "",
@@ -160,7 +189,7 @@ const ContactSection = () => {
                     ¿Necesitas una respuesta inmediata? Escríbeme por WhatsApp.
                   </p>
                   <a
-                    href="https://wa.me/+51970862081?text=Hola%20Anthony,%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios"
+                    href="https://wa.me/51970862081?text=Hola%20Anthony,%20me%20interesa%20conocer%20más%20sobre%20tus%20servicios"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative z-30 w-full inline-flex items-center justify-center px-4 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-all duration-300 hover:shadow-lg hover:shadow-green-500/25 cursor-pointer"
@@ -249,6 +278,7 @@ const ContactSection = () => {
                           onValueChange={(value) =>
                             handleInputChange("projectType", value)
                           }
+                          required
                         >
                           <SelectTrigger className="bg-gray-700/50 border-gray-600/50 text-white focus:border-blue-400 focus:ring-blue-400/20 relative z-30">
                             <SelectValue

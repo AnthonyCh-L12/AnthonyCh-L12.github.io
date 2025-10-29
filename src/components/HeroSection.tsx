@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, ExternalLink } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import anthonyProfile from "@/assets/anthony-profile.jpeg";
 
@@ -11,10 +11,14 @@ const HeroSection = () => {
     }
   };
 
+  const openCV = () => {
+    window.open("/cv-anthony-chavez.pdf", "_blank");
+  };
+
   return (
     <section
       id="inicio"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 pt-16"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 pt-24 md:pt-16"
     >
       <div className="container mx-auto px-4 lg:px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -22,7 +26,7 @@ const HeroSection = () => {
           <AnimatedSection animation="fade-in-left" className="space-y-6">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-poppins font-bold text-primary leading-tight">
-                Anthony
+                Anthony Manuel
                 <span className="block tech-gradient bg-clip-text text-white">
                   Chávez Lujan
                 </span>
@@ -58,10 +62,11 @@ const HeroSection = () => {
                 <Button
                   variant="outline"
                   size="lg"
+                  onClick={openCV}
                   className="border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300"
                 >
-                  <Download className="mr-2 h-5 w-5" />
-                  Descargar CV
+                  <ExternalLink className="mr-2 h-5 w-5" />
+                  Ver CV
                 </Button>
               </div>
             </AnimatedSection>

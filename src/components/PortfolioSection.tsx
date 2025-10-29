@@ -323,27 +323,6 @@ const PortfolioSection = () => {
             );
           })}
         </div>
-
-        {/* CTA */}
-        <AnimatedSection
-          animation="fade-in-up"
-          delay={1000}
-          className="text-center mt-16"
-        >
-          <p className="text-lg text-muted-foreground mb-6">
-            ¿Te interesa ver más proyectos o trabajar conmigo?
-          </p>
-          <Button
-            size="lg"
-            className="hero-gradient text-white font-semibold hover:shadow-lg transition-all duration-300"
-            onClick={() => {
-              const element = document.querySelector("#contacto");
-              if (element) element.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Ver más proyectos
-          </Button>
-        </AnimatedSection>
       </div>
 
       {/* Image Modal - Sin cambios en el modal */}
