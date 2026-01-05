@@ -3,7 +3,7 @@
 Este proyecto corresponde a mi **página personal**, un espacio donde presento información sobre mí, mis proyectos y formas de contacto.  
 El objetivo de esta web es mostrar mi perfil profesional, mis habilidades y mi portafolio de trabajos realizados.
 
-🌐 **URL del proyecto**: [https://anthony-chavez.netlify.app/](https://anthony-chavez.netlify.app/)
+🌐 **URL del proyecto**: [https://anthonychavez.netlify.app/](https://anthonychavez.netlify.app/)
 
 ---
 
